@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* background: #00040F; */
+}
+
+.fondo-section1 {
+    background-color: aqua;
+    background-image: url('/img/fondo2.jpg');
+    background-size: cover; /* Para cubrir toda la sección */
+    background-attachment: fixed; /* Fijar el fondo */
+    background-position: top; /* Posicionar el fondo en la parte superior */
+}
+
+header {
+    margin: 0px 40px;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Alinear elementos al extremo */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 22px;
+    height: auto; /* Ajustar el tamaño máximo del logo */
+    transition: box-shadow 0.1s ease; /* Transición suave para el efecto de luz */
+}
+
+.logo img:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Generar luz al pasar el mouse */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+    transition: box-shadow 0.1s ease;
+}
+
+nav li:hover{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.menu-item {
+    padding: 5px 10px; /* Relleno para los elementos del menú */
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    /* transition: box-shadow 0.1s ease; */
+}
+
+/* .menu-item a:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); */
+
+
+/* Section main */
+/* .main-section {
+    height: 400px;
+    background-color: aqua;
+    background-image: url('/img/fondo2.jpg');
+    background-size: cover; 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+} */
+.main-section {
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap; /* Envolver las tarjetas cuando no hay suficiente espacio */
+    justify-content: center; /* Centrar horizontalmente las tarjetas */
+    align-items: flex-start; /* Alinear las tarjetas en la parte superior de .movie-container */
+    margin-bottom: -60px;
+}
+
+.movie-card {
+    margin: 20px;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    width: 250px; /* Ancho específico */
+    height: 320px; /* Alto específico */
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al aumentar tamaño */
+    background-size: cover; /* Para cubrir toda la tarjeta */
+    background-position: center; /* Para centrar la imagen */
+}
+
+.card1 {
+    background-image: url('/img/mov1.jpg'); /* Ruta de la imagen de la tarjeta 1 */
+}
+.card2 {
+    background-image: url('/img/mov2.jpg'); /* Ruta de la imagen de la tarjeta 2 */
+}
+.card3 {
+    background-image: url('/img/mov3.jpg'); /* Ruta de la imagen de la tarjeta 3 */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+.movie-info {
+    margin: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparencia negra del 50% */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .movie-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* SECTION 2 */
+
+.section2 {
+    margin-bottom: 40px;
+}
+.container1-titulo {
+    /* background-color: green; */
+    margin: 112px 80px 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid;
+}
+
+.container1-titulo h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container1-movies {
+    margin: 0px 80px; /* Reducir el margen lateral */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crear 4 columnas de igual tamaño */
+    gap: 28px; /* Espacio entre las filas y columnas del grid */
+    justify-items: center;
+}
+
+.movie {
+    width: 150px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor .movie */
+    height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+.movie img:hover {
+    cursor: pointer;
+}
+
+
+
+/* Estos estilos se deben quitar más adelante */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
