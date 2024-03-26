@@ -106,7 +106,6 @@ nav li:hover{
 
 .movie-card {
     margin: 20px;
-    padding: 20px; /* Ajusta el relleno según sea necesario */
     width: 250px; /* Ancho específico */
     height: 320px; /* Alto específico */
     border-radius: 5px;
@@ -116,9 +115,7 @@ nav li:hover{
     background-position: center; /* Para centrar la imagen */
 }
 
-.card1 {
-    background-image: url('/img/mov1.jpg'); /* Ruta de la imagen de la tarjeta 1 */
-}
+
 .card2 {
     background-image: url('/img/mov2.jpg'); /* Ruta de la imagen de la tarjeta 2 */
 }
@@ -187,12 +184,27 @@ nav li:hover{
 
 .movie img {
     width: 100%; /* La imagen ocupará todo el ancho del contenedor .movie */
-    height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
+    height: 100%; /* La altura también ocupará todo el espacio disponible */
+    object-fit: cover; /* Ajustar la imagen manteniendo su relación de aspecto y cubriendo el contenedor */
 }
+
 .movie img:hover {
     cursor: pointer;
 }
-
+.movie-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.movie-info h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+.movie-info p {
+    color: white;
+    font-size: 12px;
+}
 
 
 /* Estos estilos se deben quitar más adelante */
